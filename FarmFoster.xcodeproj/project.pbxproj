@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A044F1C2B32E7CD0008B837 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A044F1B2B32E7CD0008B837 /* HomeScreenViewModel.swift */; };
+		6A044F1F2B32F4070008B837 /* FarmItemListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A044F1E2B32F4070008B837 /* FarmItemListScreen.swift */; };
+		6A044F212B32F80E0008B837 /* FarmItemScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A044F202B32F80E0008B837 /* FarmItemScreen.swift */; };
+		6AA234FB2B3ACA4E00E132FC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA234FA2B3ACA4E00E132FC /* AppCoordinator.swift */; };
+		6AA234FE2B3ACA7F00E132FC /* FlowStacks in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA234FD2B3ACA7F00E132FC /* FlowStacks */; };
+		6AA235012B3ACB0E00E132FC /* AppRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235002B3ACB0E00E132FC /* AppRoutes.swift */; };
+		6AA235032B3ACC2800E132FC /* MainTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235022B3ACC2800E132FC /* MainTabCoordinator.swift */; };
+		6AA235062B3AE27D00E132FC /* HideTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235052B3AE27D00E132FC /* HideTabBar.swift */; };
+		6AA235092B3AE2CD00E132FC /* TabBarViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235082B3AE2CD00E132FC /* TabBarViewModifier.swift */; };
+		6AA2350C2B3AE7A300E132FC /* itemDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA2350B2B3AE7A300E132FC /* itemDetailScreen.swift */; };
+		6AA2350E2B3AE81900E132FC /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA2350D2B3AE81900E132FC /* HomeCoordinator.swift */; };
+		6AAADA972B3413F200486AC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AAADA962B3413F200486AC7 /* LaunchScreen.storyboard */; };
+		6ABDA25B2B32A3470071E298 /* FarmFosterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABDA25A2B32A3470071E298 /* FarmFosterApp.swift */; };
+		6ABDA25F2B32A3490071E298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ABDA25E2B32A3490071E298 /* Assets.xcassets */; };
+		6ABDA2622B32A3490071E298 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ABDA2612B32A3490071E298 /* Preview Assets.xcassets */; };
+		6ABDA26E2B32A4390071E298 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABDA26D2B32A4390071E298 /* HomeScreen.swift */; };
+		6ABDA2712B32A5DD0071E298 /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABDA2702B32A5DD0071E298 /* AppImage.swift */; };
+		6ABDA2752B32A97F0071E298 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ABDA2742B32A97F0071E298 /* Colors.xcassets */; };
+		6ABDA2772B32A9C60071E298 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABDA2762B32A9C60071E298 /* AppColor.swift */; };
+		6ABDA27B2B32B2E30071E298 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6ABDA27A2B32B2E30071E298 /* Roboto-Regular.ttf */; };
+		6ABDA27D2B32B3580071E298 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6ABDA27C2B32B3580071E298 /* Roboto-Bold.ttf */; };
+		6ABDA27F2B32B38E0071E298 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABDA27E2B32B38E0071E298 /* AppFont.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A044F1B2B32E7CD0008B837 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
+		6A044F1E2B32F4070008B837 /* FarmItemListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmItemListScreen.swift; sourceTree = "<group>"; };
+		6A044F202B32F80E0008B837 /* FarmItemScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmItemScreen.swift; sourceTree = "<group>"; };
+		6AA234FA2B3ACA4E00E132FC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		6AA235002B3ACB0E00E132FC /* AppRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoutes.swift; sourceTree = "<group>"; };
+		6AA235022B3ACC2800E132FC /* MainTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabCoordinator.swift; sourceTree = "<group>"; };
+		6AA235052B3AE27D00E132FC /* HideTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideTabBar.swift; sourceTree = "<group>"; };
+		6AA235082B3AE2CD00E132FC /* TabBarViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModifier.swift; sourceTree = "<group>"; };
+		6AA2350B2B3AE7A300E132FC /* itemDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemDetailScreen.swift; sourceTree = "<group>"; };
+		6AA2350D2B3AE81900E132FC /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		6AAADA962B3413F200486AC7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6ABDA2572B32A3470071E298 /* FarmFoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmFoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ABDA25A2B32A3470071E298 /* FarmFosterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmFosterApp.swift; sourceTree = "<group>"; };
+		6ABDA25E2B32A3490071E298 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6ABDA2612B32A3490071E298 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6ABDA26D2B32A4390071E298 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		6ABDA2702B32A5DD0071E298 /* AppImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImage.swift; sourceTree = "<group>"; };
+		6ABDA2742B32A97F0071E298 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		6ABDA2762B32A9C60071E298 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		6ABDA2792B32B1D50071E298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6ABDA27A2B32B2E30071E298 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		6ABDA27C2B32B3580071E298 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		6ABDA27E2B32B38E0071E298 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6ABDA2542B32A3470071E298 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AA234FE2B3ACA7F00E132FC /* FlowStacks in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A044F1D2B32F3C70008B837 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				6A044F1E2B32F4070008B837 /* FarmItemListScreen.swift */,
+				6A044F202B32F80E0008B837 /* FarmItemScreen.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		6AA234FF2B3ACAF400E132FC /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				6AA235002B3ACB0E00E132FC /* AppRoutes.swift */,
+				6AA2350D2B3AE81900E132FC /* HomeCoordinator.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		6AA235042B3AE26000E132FC /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				6AA235052B3AE27D00E132FC /* HideTabBar.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		6AA235072B3AE2A200E132FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6AA235082B3AE2CD00E132FC /* TabBarViewModifier.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6AA2350A2B3AE74F00E132FC /* itemSpecificView */ = {
+			isa = PBXGroup;
+			children = (
+				6AA2350B2B3AE7A300E132FC /* itemDetailScreen.swift */,
+			);
+			path = itemSpecificView;
+			sourceTree = "<group>";
+		};
+		6ABDA24E2B32A3470071E298 = {
+			isa = PBXGroup;
+			children = (
+				6ABDA2592B32A3470071E298 /* FarmFoster */,
+				6ABDA2582B32A3470071E298 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6ABDA2582B32A3470071E298 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6ABDA2572B32A3470071E298 /* FarmFoster.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6ABDA2592B32A3470071E298 /* FarmFoster */ = {
+			isa = PBXGroup;
+			children = (
+				6AA235072B3AE2A200E132FC /* Extensions */,
+				6AA235042B3AE26000E132FC /* ViewModifiers */,
+				6ABDA2792B32B1D50071E298 /* Info.plist */,
+				6ABDA26C2B32A3770071E298 /* Reusables */,
+				6ABDA26B2B32A36E0071E298 /* Constants */,
+				6ABDA26A2B32A3660071E298 /* Resources */,
+				6ABDA2692B32A35C0071E298 /* Coordinators */,
+				6ABDA2682B32A3500071E298 /* Modules */,
+				6ABDA25A2B32A3470071E298 /* FarmFosterApp.swift */,
+				6ABDA2602B32A3490071E298 /* Preview Content */,
+				6AAADA962B3413F200486AC7 /* LaunchScreen.storyboard */,
+			);
+			path = FarmFoster;
+			sourceTree = "<group>";
+		};
+		6ABDA2602B32A3490071E298 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6ABDA2612B32A3490071E298 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6ABDA2682B32A3500071E298 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6ABDA26F2B32A4600071E298 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6ABDA2692B32A35C0071E298 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				6AA234FF2B3ACAF400E132FC /* Routes */,
+				6AA234FA2B3ACA4E00E132FC /* AppCoordinator.swift */,
+				6AA235022B3ACC2800E132FC /* MainTabCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		6ABDA26A2B32A3660071E298 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6ABDA2782B32B1760071E298 /* Font */,
+				6ABDA2742B32A97F0071E298 /* Colors.xcassets */,
+				6ABDA25E2B32A3490071E298 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6ABDA26B2B32A36E0071E298 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				6ABDA2702B32A5DD0071E298 /* AppImage.swift */,
+				6ABDA2762B32A9C60071E298 /* AppColor.swift */,
+				6ABDA27E2B32B38E0071E298 /* AppFont.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		6ABDA26C2B32A3770071E298 /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		6ABDA26F2B32A4600071E298 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6AA2350A2B3AE74F00E132FC /* itemSpecificView */,
+				6A044F1D2B32F3C70008B837 /* ListView */,
+				6ABDA26D2B32A4390071E298 /* HomeScreen.swift */,
+				6A044F1B2B32E7CD0008B837 /* HomeScreenViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6ABDA2782B32B1760071E298 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				6ABDA27C2B32B3580071E298 /* Roboto-Bold.ttf */,
+				6ABDA27A2B32B2E30071E298 /* Roboto-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6ABDA2562B32A3470071E298 /* FarmFoster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ABDA2652B32A3490071E298 /* Build configuration list for PBXNativeTarget "FarmFoster" */;
+			buildPhases = (
+				6ABDA2532B32A3470071E298 /* Sources */,
+				6ABDA2542B32A3470071E298 /* Frameworks */,
+				6ABDA2552B32A3470071E298 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FarmFoster;
+			packageProductDependencies = (
+				6AA234FD2B3ACA7F00E132FC /* FlowStacks */,
+			);
+			productName = FarmFoster;
+			productReference = 6ABDA2572B32A3470071E298 /* FarmFoster.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6ABDA24F2B32A3470071E298 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					6ABDA2562B32A3470071E298 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 6ABDA2522B32A3470071E298 /* Build configuration list for PBXProject "FarmFoster" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6ABDA24E2B32A3470071E298;
+			packageReferences = (
+				6AA234FC2B3ACA7F00E132FC /* XCRemoteSwiftPackageReference "FlowStacks" */,
+			);
+			productRefGroup = 6ABDA2582B32A3470071E298 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6ABDA2562B32A3470071E298 /* FarmFoster */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6ABDA2552B32A3470071E298 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ABDA2752B32A97F0071E298 /* Colors.xcassets in Resources */,
+				6ABDA2622B32A3490071E298 /* Preview Assets.xcassets in Resources */,
+				6ABDA27D2B32B3580071E298 /* Roboto-Bold.ttf in Resources */,
+				6AAADA972B3413F200486AC7 /* LaunchScreen.storyboard in Resources */,
+				6ABDA27B2B32B2E30071E298 /* Roboto-Regular.ttf in Resources */,
+				6ABDA25F2B32A3490071E298 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6ABDA2532B32A3470071E298 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ABDA26E2B32A4390071E298 /* HomeScreen.swift in Sources */,
+				6A044F1C2B32E7CD0008B837 /* HomeScreenViewModel.swift in Sources */,
+				6AA2350E2B3AE81900E132FC /* HomeCoordinator.swift in Sources */,
+				6ABDA27F2B32B38E0071E298 /* AppFont.swift in Sources */,
+				6AA235012B3ACB0E00E132FC /* AppRoutes.swift in Sources */,
+				6A044F212B32F80E0008B837 /* FarmItemScreen.swift in Sources */,
+				6AA235032B3ACC2800E132FC /* MainTabCoordinator.swift in Sources */,
+				6ABDA2772B32A9C60071E298 /* AppColor.swift in Sources */,
+				6ABDA25B2B32A3470071E298 /* FarmFosterApp.swift in Sources */,
+				6AA234FB2B3ACA4E00E132FC /* AppCoordinator.swift in Sources */,
+				6AA235092B3AE2CD00E132FC /* TabBarViewModifier.swift in Sources */,
+				6AA235062B3AE27D00E132FC /* HideTabBar.swift in Sources */,
+				6ABDA2712B32A5DD0071E298 /* AppImage.swift in Sources */,
+				6A044F1F2B32F4070008B837 /* FarmItemListScreen.swift in Sources */,
+				6AA2350C2B3AE7A300E132FC /* itemDetailScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6ABDA2632B32A3490071E298 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6ABDA2642B32A3490071E298 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6ABDA2662B32A3490071E298 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FarmFoster/Preview Content\"";
+				DEVELOPMENT_TEAM = U32229755T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FarmFoster/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebpearls.FarmFoster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6ABDA2672B32A3490071E298 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FarmFoster/Preview Content\"";
+				DEVELOPMENT_TEAM = U32229755T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FarmFoster/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebpearls.FarmFoster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6ABDA2522B32A3470071E298 /* Build configuration list for PBXProject "FarmFoster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ABDA2632B32A3490071E298 /* Debug */,
+				6ABDA2642B32A3490071E298 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ABDA2652B32A3490071E298 /* Build configuration list for PBXNativeTarget "FarmFoster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ABDA2662B32A3490071E298 /* Debug */,
+				6ABDA2672B32A3490071E298 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6AA234FC2B3ACA7F00E132FC /* XCRemoteSwiftPackageReference "FlowStacks" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnpatrickmorgan/FlowStacks.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6AA234FD2B3ACA7F00E132FC /* FlowStacks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AA234FC2B3ACA7F00E132FC /* XCRemoteSwiftPackageReference "FlowStacks" */;
+			productName = FlowStacks;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6ABDA24F2B32A3470071E298 /* Project object */;
+}
