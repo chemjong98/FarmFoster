@@ -12,19 +12,32 @@ public protocol ScreenRoutable {}
 
 enum HomeRoutes: Equatable {
     case home
-    case itemspecific
+    case itemspecific(disease: [DiseaseModel])
 }
 
 struct HomeCoordinator: View {
+    // MARK: - properties
     @State private var routes: Routes<HomeRoutes> = [.root(.home, embedInNavigationView: true)]
+    private var client: NetworkClient
+    
+    init(client: NetworkClient) {
+        self.client = client
+    }
+
+    // MARK: -  body
     var body: some View {
         Router($routes) { screen, _ in
             switch screen {
-                case .itemspecific:
-                    itemDetailScreen()
+                case .itemspecific(let disease):
+                itemDetailScreen(viewModel: {
+                    let viewModel = ItemDetailViewModel()
+                    viewModel.disease = disease
+                    return viewModel
+                }())
+
             case .home:
                 HomeScreen(viewModel: {
-                    let viewModel = HomeScreenViewModel()
+                    let viewModel = HomeScreenViewModel(networkClient: client)
                     viewModel.onRouteTrigger = handleFlowRoute()
                     return viewModel
                 }())
@@ -33,16 +46,16 @@ struct HomeCoordinator: View {
         }
     }
 
-    func showItemSpecificScreen() {
-        routes.push(.itemspecific)
+    func showItemSpecificScreen(disease: [DiseaseModel]) {
+        routes.push(.itemspecific(disease: disease))
     }
 
-    func handleFlowRoute() -> ((ScreenRoutable) -> Void)  {
+    func handleFlowRoute() -> ((ScreenRoutable) -> Void)   {
         return {
             Route in
             switch Route {
-            case HomeRoutables.itemSpecificScren:
-                showItemSpecificScreen()
+            case HomeRoutables.itemSpecificScren(let disease):
+                showItemSpecificScreen(disease: disease)
             default:
                 break
             }

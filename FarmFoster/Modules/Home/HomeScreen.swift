@@ -136,5 +136,5 @@ struct HomeScreen: View {
 }
 
 #Preview {
-    HomeScreen(viewModel: HomeScreenViewModel())
+    HomeScreen(viewModel: HomeScreenViewModel(networkClient: NetworkClient()))
 }

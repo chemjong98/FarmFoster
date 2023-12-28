@@ -12,7 +12,16 @@ enum Tabs {
 }
 
 struct MainTabCoordinator: View {
+    // MARK: - properties
     @State private var selectedTab: Tabs = .home
+    private var client: NetworkClient
+
+    init(client: NetworkClient) {
+        self.client = client
+    }
+
+
+    // MARK: - body
     var body: some View {
        tabview
     }
@@ -20,7 +29,7 @@ struct MainTabCoordinator: View {
     @ViewBuilder
     var tabview: some View {
         TabView(selection: $selectedTab) {
-          HomeCoordinator()
+            HomeCoordinator(client: client)
                 .tabItem {
                     Image(systemName: "house")
                     Text("Home")
@@ -39,5 +48,5 @@ struct MainTabCoordinator: View {
 }
 
 #Preview {
-    MainTabCoordinator()
+    MainTabCoordinator(client: NetworkClient())
 }

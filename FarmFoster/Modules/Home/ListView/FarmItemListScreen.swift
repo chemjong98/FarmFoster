@@ -8,20 +8,26 @@
 import SwiftUI
 
 struct FarmItemListScreen: View {
+    // MARK: - properties
     @ObservedObject private var viewModel: HomeScreenViewModel
     @Binding var selectionType: farmType
-    private let image: [Image] = [AppImage.blueBerry.image, AppImage.blueBerry2.image, AppImage.blueBerry2.image, AppImage.blueBerry.image]
-
-    init(viewModel: HomeScreenViewModel, selectionType: Binding<farmType>) {
-        self.viewModel = viewModel
-        self._selectionType = selectionType
-    }
 
     @State var column: [GridItem] = [
         GridItem(.adaptive(minimum: UIScreen.main.bounds.width*0.4, maximum: UIScreen.main.bounds.width*0.4), spacing: UIScreen.main.bounds.width*0.1, alignment: .leading),
         GridItem(.adaptive(minimum: UIScreen.main.bounds.width*0.4, maximum: UIScreen.main.bounds.width*0.4), spacing: UIScreen.main.bounds.width*0.1, alignment: .leading)
         ]
 
+
+    private let image: [Image] = [AppImage.blueBerry.image, AppImage.blueBerry2.image, AppImage.blueBerry2.image, AppImage.blueBerry.image]
+
+
+    // MARK: - init
+    init(viewModel: HomeScreenViewModel, selectionType: Binding<farmType>) {
+        self.viewModel = viewModel
+        self._selectionType = selectionType
+    }
+
+    // MARK: - body
     var body: some View {
         ScrollView {
             LazyVGrid(columns: column, alignment: .leading) {
@@ -32,7 +38,7 @@ struct FarmItemListScreen: View {
                         .frame(height: 120)
                         .scaledToFit()
                         .onTapGesture {
-                            viewModel.goToItemSpecificScreen()
+                            viewModel.goToItemSpecificScreen(disease: viewModel.disease)
                         }
                 }
             }
@@ -43,5 +49,5 @@ struct FarmItemListScreen: View {
 }
 
 #Preview {
-    FarmItemListScreen(viewModel: HomeScreenViewModel(), selectionType: .constant(.plants) )
+    FarmItemListScreen(viewModel: HomeScreenViewModel(networkClient: NetworkClient()), selectionType: .constant(.plants) )
 }
