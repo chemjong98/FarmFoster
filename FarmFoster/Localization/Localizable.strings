@@ -1,0 +1,11 @@
+/* 
+  Localization.strings
+  FarmFoster
+
+  Created by ebpearls on 31/01/2024.
+  
+*/
+
+"componentList" = "Components List";
+"map" = "Map";
+"shader" = "Shader";

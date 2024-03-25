@@ -9,29 +9,18 @@ import SwiftUI
 
 struct FarmItemScreen: View {
     // MARK: - properties
-     private var selectionType: farmType
-    private var image: Image
+    private var animal: Animals?
+    private var plant: Plants?
 
     // MARK: - init
-    init(selectionType: farmType, image: Image) {
-        self.selectionType = selectionType
-        self.image = image
+    init( animal: Animals? = nil, plant: Plants? = nil) {
+        self.animal = animal
+        self.plant = plant
     }
 
     // MARK: - body
     var body: some View {
         VStack(alignment: .leading) {
-          
-            if selectionType == .plants {
-                image
-                    .resizable()
-//                    .clipShape(.rect(cornerRadii: RectangleCornerRadii(topLeading: 8, bottomLeading: 8, bottomTrailing: 8, topTrailing: 8)))
-                    .clipShape(Rectangle())
-                    .background {
-                        RoundedRectangle(cornerRadius: 8)
-                            .stroke(Color.gray.opacity(0.5), lineWidth: /*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/)
-                    }
-            } else {
                 AppImage.horse.image
                     .resizable()
                     .aspectRatio(contentMode: .fill)
@@ -40,15 +29,21 @@ struct FarmItemScreen: View {
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(Color.gray.opacity(0.5), lineWidth: /*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/)
                     }
-            }
 
-            Text((selectionType == .plants) ? "Blueberry" : "Horse")
+            if let plant = plant {
+                Text(plant.name)
                 .font(.custom(AppFont.regular.font, size: 16))
+            }
+            
+            if let animal = animal {
+                Text(animal.name)
+                    .font(.custom(AppFont.regular.font, size: 16))
+            }
 
         }
     }
 }
 
 //#Preview {
-//    FarmItemScreen(selectionType: .plants)
+//    FarmItemScreen(selectionType: .plants, animal: [Animals] = [])
 //}

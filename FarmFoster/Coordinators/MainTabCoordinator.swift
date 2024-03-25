@@ -8,12 +8,12 @@
 import SwiftUI
 enum Tabs {
     case home
-    case setting
+    case components
 }
 
 struct MainTabCoordinator: View {
     // MARK: - properties
-    @State private var selectedTab: Tabs = .home
+    @State private var selectedTab: Tabs = .components
     private var client: NetworkClient
 
     init(client: NetworkClient) {
@@ -36,17 +36,17 @@ struct MainTabCoordinator: View {
                 }
             .tag(Tabs.home)
 
-            Text("settings")
+            ComponentsCoordinator()
                 .tabItem {
-                    Image(systemName: "gear")
-                    Text("Settings")
+                    Image(systemName: "circle.grid.3x3.fill")
+                    Text("Components")
                 }
-                .tag(Tabs.setting)
+                .tag(Tabs.components)
         }
         .tint(AppColor.appOrange.color)
     }
 }
 
 #Preview {
-    MainTabCoordinator(client: NetworkClient())
+    MainTabCoordinator(client: NetworkClient.shared)
 }
