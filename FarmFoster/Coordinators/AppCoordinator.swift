@@ -11,7 +11,7 @@ import FlowStacks
 struct AppCoordinator: View {
     // MARK: - properties
     @State var routes: Routes<AppRoutes> = [.root(.mainTabRoute)]
-    private var client = NetworkClient()
+    private var client = NetworkClient.shared
 
     // MARK: -  body
     var body: some View {

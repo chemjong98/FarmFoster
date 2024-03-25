@@ -36,7 +36,7 @@ struct HomeScreen: View {
 
                 Rectangle()
                     .offset(y: -8)
-                    .foregroundStyle(AppColor.bg.color)
+                    .foregroundColor(AppColor.bg.color)
             }
             VStack {
                 Spacer()
@@ -61,7 +61,7 @@ struct HomeScreen: View {
 
                         filterTab(selection: $viewModel.selection)
 
-                        FarmItemListScreen(viewModel: viewModel, selectionType: $viewModel.selection)
+                        FarmItemListScreen(viewModel: viewModel)
 
                     }
                     .padding(.all, 16)
@@ -94,7 +94,10 @@ struct HomeScreen: View {
                     }
                     .onTapGesture {
                         withAnimation(.smooth) {
-                            viewModel.selection = .plants
+                            DispatchQueue.main.async {
+                                viewModel.selection = .plants
+                            }
+                            viewModel.getPlants()
                         }
                     }
                     .overlay(alignment: .bottom) {
@@ -116,7 +119,10 @@ struct HomeScreen: View {
                     }
                     .onTapGesture {
                         withAnimation(.bouncy) {
-                            viewModel.selection = .animals
+                            DispatchQueue.main.async {
+                                viewModel.selection = .animals
+                            }
+                            viewModel.getAnimals()
                         }
                     }
                     .overlay(alignment: .bottom) {
@@ -136,5 +142,5 @@ struct HomeScreen: View {
 }
 
 #Preview {
-    HomeScreen(viewModel: HomeScreenViewModel(networkClient: NetworkClient()))
+    HomeScreen(viewModel: HomeScreenViewModel(client: AnimalClient(client: NetworkClient.shared), plantClient: PlantClient(client: NetworkClient.shared)))
 }

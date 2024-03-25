@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct DiseaseModel: Hashable, Decodable {
-    let id     : String
     let name     : String
     let symptoms :[String]
     let solution: [String]
 
-    private enum CodingKeys: String, CodingKey {
-            case id = "_id"
-            case name
-            case symptoms
-            case solution
-        }
+}
+
+struct ItemDiseaseModel: Hashable, Decodable {
+    let id : String
+    let itemName : String
+    let itemDisease: [DiseaseModel]
+
+    enum CodingKeys: String, CodingKey {
+        case id = "_id"
+        case itemName
+        case itemDisease
+    }
 }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,17 @@
 		6A11A03A2B3D79E600F61F23 /* DiseaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A11A0392B3D79E600F61F23 /* DiseaseModel.swift */; };
 		6A11A03D2B3D7D3E00F61F23 /* itemDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A11A03C2B3D7D3E00F61F23 /* itemDetailScreen.swift */; };
 		6A11A03F2B3D7D9600F61F23 /* ItemDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A11A03E2B3D7D9600F61F23 /* ItemDetailViewModel.swift */; };
+		6A4EB9952B6A072A00EABA01 /* ComponentsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4EB9942B6A072A00EABA01 /* ComponentsCoordinator.swift */; };
+		6A4EB9972B6A089E00EABA01 /* ComponentsRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4EB9962B6A089E00EABA01 /* ComponentsRoutes.swift */; };
+		6A4EB99A2B6A0A5800EABA01 /* ComponentsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4EB9992B6A0A5800EABA01 /* ComponentsScreen.swift */; };
+		6A4EB99C2B6A0AB700EABA01 /* ComponentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4EB99B2B6A0AB700EABA01 /* ComponentsViewModel.swift */; };
+		6A4EB99F2B6A0C4D00EABA01 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A4EB99E2B6A0C4D00EABA01 /* Localizable.strings */; };
+		6A4EB9A12B6A0CF000EABA01 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4EB9A02B6A0CF000EABA01 /* LocalizedString.swift */; };
+		6A4EB9A52B6A6C3800EABA01 /* CarouselScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4EB9A42B6A6C3800EABA01 /* CarouselScreen.swift */; };
+		6A65B7702B6900F8004F8155 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A65B76F2B6900F8004F8155 /* MapScreen.swift */; };
+		6A9FAD4F2BABED7C00E5A5EE /* Plant.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 6A9FAD4E2BABED7C00E5A5EE /* Plant.graphql */; };
+		6A9FAD512BABED9F00E5A5EE /* PlantClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9FAD502BABED9F00E5A5EE /* PlantClient.swift */; };
+		6A9FAD542BABF72600E5A5EE /* FarmFosterAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 6A9FAD532BABF72600E5A5EE /* FarmFosterAPI */; };
 		6AA234FB2B3ACA4E00E132FC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA234FA2B3ACA4E00E132FC /* AppCoordinator.swift */; };
 		6AA234FE2B3ACA7F00E132FC /* FlowStacks in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA234FD2B3ACA7F00E132FC /* FlowStacks */; };
 		6AA235012B3ACB0E00E132FC /* AppRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235002B3ACB0E00E132FC /* AppRoutes.swift */; };
@@ -21,7 +32,19 @@
 		6AA235062B3AE27D00E132FC /* HideTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235052B3AE27D00E132FC /* HideTabBar.swift */; };
 		6AA235092B3AE2CD00E132FC /* TabBarViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235082B3AE2CD00E132FC /* TabBarViewModifier.swift */; };
 		6AA2350E2B3AE81900E132FC /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA2350D2B3AE81900E132FC /* HomeCoordinator.swift */; };
+		6AA8C91B2BAA9CF0005FE0E2 /* AnimalClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8C91A2BAA9CF0005FE0E2 /* AnimalClient.swift */; };
 		6AAADA972B3413F200486AC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AAADA962B3413F200486AC7 /* LaunchScreen.storyboard */; };
+		6AB863CD2BA9847400F7F8BE /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 6AB863CC2BA9847400F7F8BE /* Apollo */; };
+		6AB863CF2BA9847400F7F8BE /* Apollo-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 6AB863CE2BA9847400F7F8BE /* Apollo-Dynamic */; };
+		6AB863D12BA9847400F7F8BE /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 6AB863D02BA9847400F7F8BE /* ApolloAPI */; };
+		6AB863D32BA9847400F7F8BE /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 6AB863D22BA9847400F7F8BE /* ApolloSQLite */; };
+		6AB863D52BA9847400F7F8BE /* ApolloTestSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 6AB863D42BA9847400F7F8BE /* ApolloTestSupport */; };
+		6AB863D72BA9847400F7F8BE /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 6AB863D62BA9847400F7F8BE /* ApolloWebSocket */; };
+		6AB863DA2BA98B1400F7F8BE /* Animal.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 6AB863D92BA98B1400F7F8BE /* Animal.graphql */; };
+		6AB863DF2BA990DC00F7F8BE /* FarmFosterAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 6AB863DE2BA990DC00F7F8BE /* FarmFosterAPI */; };
+		6AB863E42BA9A1DA00F7F8BE /* NetworkInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB863E32BA9A1DA00F7F8BE /* NetworkInterceptor.swift */; };
+		6AB863E62BA9A78800F7F8BE /* DefaultInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB863E52BA9A78800F7F8BE /* DefaultInterceptor.swift */; };
+		6AB863E92BA9AEE600F7F8BE /* BuildConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB863E82BA9AEE600F7F8BE /* BuildConfiguration.swift */; };
 		6ABDA25B2B32A3470071E298 /* FarmFosterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABDA25A2B32A3470071E298 /* FarmFosterApp.swift */; };
 		6ABDA25F2B32A3490071E298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ABDA25E2B32A3490071E298 /* Assets.xcassets */; };
 		6ABDA2622B32A3490071E298 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ABDA2612B32A3490071E298 /* Preview Assets.xcassets */; };
@@ -42,13 +65,28 @@
 		6A11A0392B3D79E600F61F23 /* DiseaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseaseModel.swift; sourceTree = "<group>"; };
 		6A11A03C2B3D7D3E00F61F23 /* itemDetailScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemDetailScreen.swift; sourceTree = "<group>"; };
 		6A11A03E2B3D7D9600F61F23 /* ItemDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewModel.swift; sourceTree = "<group>"; };
+		6A4EB9942B6A072A00EABA01 /* ComponentsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsCoordinator.swift; sourceTree = "<group>"; };
+		6A4EB9962B6A089E00EABA01 /* ComponentsRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsRoutes.swift; sourceTree = "<group>"; };
+		6A4EB9992B6A0A5800EABA01 /* ComponentsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsScreen.swift; sourceTree = "<group>"; };
+		6A4EB99B2B6A0AB700EABA01 /* ComponentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsViewModel.swift; sourceTree = "<group>"; };
+		6A4EB99E2B6A0C4D00EABA01 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		6A4EB9A02B6A0CF000EABA01 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
+		6A4EB9A42B6A6C3800EABA01 /* CarouselScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselScreen.swift; sourceTree = "<group>"; };
+		6A65B76F2B6900F8004F8155 /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+		6A9FAD4E2BABED7C00E5A5EE /* Plant.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Plant.graphql; sourceTree = "<group>"; };
+		6A9FAD502BABED9F00E5A5EE /* PlantClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantClient.swift; sourceTree = "<group>"; };
 		6AA234FA2B3ACA4E00E132FC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		6AA235002B3ACB0E00E132FC /* AppRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoutes.swift; sourceTree = "<group>"; };
 		6AA235022B3ACC2800E132FC /* MainTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabCoordinator.swift; sourceTree = "<group>"; };
 		6AA235052B3AE27D00E132FC /* HideTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideTabBar.swift; sourceTree = "<group>"; };
 		6AA235082B3AE2CD00E132FC /* TabBarViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModifier.swift; sourceTree = "<group>"; };
 		6AA2350D2B3AE81900E132FC /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		6AA8C91A2BAA9CF0005FE0E2 /* AnimalClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalClient.swift; sourceTree = "<group>"; };
 		6AAADA962B3413F200486AC7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6AB863D92BA98B1400F7F8BE /* Animal.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Animal.graphql; sourceTree = "<group>"; };
+		6AB863E32BA9A1DA00F7F8BE /* NetworkInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptor.swift; sourceTree = "<group>"; };
+		6AB863E52BA9A78800F7F8BE /* DefaultInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultInterceptor.swift; sourceTree = "<group>"; };
+		6AB863E82BA9AEE600F7F8BE /* BuildConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildConfiguration.swift; sourceTree = "<group>"; };
 		6ABDA2572B32A3470071E298 /* FarmFoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmFoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ABDA25A2B32A3470071E298 /* FarmFosterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmFosterApp.swift; sourceTree = "<group>"; };
 		6ABDA25E2B32A3490071E298 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,7 +106,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AB863DF2BA990DC00F7F8BE /* FarmFosterAPI in Frameworks */,
 				6AA234FE2B3ACA7F00E132FC /* FlowStacks in Frameworks */,
+				6AB863CD2BA9847400F7F8BE /* Apollo in Frameworks */,
+				6AB863D32BA9847400F7F8BE /* ApolloSQLite in Frameworks */,
+				6AB863D52BA9847400F7F8BE /* ApolloTestSupport in Frameworks */,
+				6AB863D72BA9847400F7F8BE /* ApolloWebSocket in Frameworks */,
+				6AB863D12BA9847400F7F8BE /* ApolloAPI in Frameworks */,
+				6AB863CF2BA9847400F7F8BE /* Apollo-Dynamic in Frameworks */,
+				6A9FAD542BABF72600E5A5EE /* FarmFosterAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +133,8 @@
 		6A11A0352B3D6B4000F61F23 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				6AB863E22BA9A16A00F7F8BE /* Introceptors */,
+				6AB863D82BA98AA200F7F8BE /* GraphQlClient */,
 				6A11A0362B3D6B7400F61F23 /* NetworkClient.swift */,
 			);
 			path = Helper;
@@ -109,10 +157,46 @@
 			path = itemSpecificView;
 			sourceTree = "<group>";
 		};
+		6A4EB9982B6A0A2E00EABA01 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				6A4EB9A42B6A6C3800EABA01 /* CarouselScreen.swift */,
+			);
+			path = Carousel;
+			sourceTree = "<group>";
+		};
+		6A4EB99D2B6A0C1D00EABA01 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				6A4EB99E2B6A0C4D00EABA01 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		6A65B76D2B68FF09004F8155 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6A4EB9992B6A0A5800EABA01 /* ComponentsScreen.swift */,
+				6A4EB99B2B6A0AB700EABA01 /* ComponentsViewModel.swift */,
+				6A4EB9982B6A0A2E00EABA01 /* Carousel */,
+				6A65B76E2B6900E2004F8155 /* Map */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		6A65B76E2B6900E2004F8155 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				6A65B76F2B6900F8004F8155 /* MapScreen.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		6AA234FF2B3ACAF400E132FC /* Routes */ = {
 			isa = PBXGroup;
 			children = (
 				6AA235002B3ACB0E00E132FC /* AppRoutes.swift */,
+				6A4EB9962B6A089E00EABA01 /* ComponentsRoutes.swift */,
 			);
 			path = Routes;
 			sourceTree = "<group>";
@@ -133,11 +217,56 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		6AB863D82BA98AA200F7F8BE /* GraphQlClient */ = {
+			isa = PBXGroup;
+			children = (
+				6AB863D92BA98B1400F7F8BE /* Animal.graphql */,
+				6A9FAD4E2BABED7C00E5A5EE /* Plant.graphql */,
+				6AA8C91A2BAA9CF0005FE0E2 /* AnimalClient.swift */,
+				6A9FAD502BABED9F00E5A5EE /* PlantClient.swift */,
+			);
+			path = GraphQlClient;
+			sourceTree = "<group>";
+		};
+		6AB863DD2BA990DC00F7F8BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AB863E12BA99A8300F7F8BE /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				6AAADA962B3413F200486AC7 /* LaunchScreen.storyboard */,
+				6ABDA25A2B32A3470071E298 /* FarmFosterApp.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+		6AB863E22BA9A16A00F7F8BE /* Introceptors */ = {
+			isa = PBXGroup;
+			children = (
+				6AB863E32BA9A1DA00F7F8BE /* NetworkInterceptor.swift */,
+				6AB863E52BA9A78800F7F8BE /* DefaultInterceptor.swift */,
+			);
+			path = Introceptors;
+			sourceTree = "<group>";
+		};
+		6AB863E72BA9AECC00F7F8BE /* BuildConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				6AB863E82BA9AEE600F7F8BE /* BuildConfiguration.swift */,
+			);
+			path = BuildConfiguration;
+			sourceTree = "<group>";
+		};
 		6ABDA24E2B32A3470071E298 = {
 			isa = PBXGroup;
 			children = (
 				6ABDA2592B32A3470071E298 /* FarmFoster */,
 				6ABDA2582B32A3470071E298 /* Products */,
+				6AB863DD2BA990DC00F7F8BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +281,8 @@
 		6ABDA2592B32A3470071E298 /* FarmFoster */ = {
 			isa = PBXGroup;
 			children = (
+				6AB863E72BA9AECC00F7F8BE /* BuildConfiguration */,
+				6A4EB99D2B6A0C1D00EABA01 /* Localization */,
 				6A11A0382B3D79D600F61F23 /* Models */,
 				6A11A0352B3D6B4000F61F23 /* Helper */,
 				6AA235072B3AE2A200E132FC /* Extensions */,
@@ -162,9 +293,8 @@
 				6ABDA26A2B32A3660071E298 /* Resources */,
 				6ABDA2692B32A35C0071E298 /* Coordinators */,
 				6ABDA2682B32A3500071E298 /* Modules */,
-				6ABDA25A2B32A3470071E298 /* FarmFosterApp.swift */,
+				6AB863E12BA99A8300F7F8BE /* Extras */,
 				6ABDA2602B32A3490071E298 /* Preview Content */,
-				6AAADA962B3413F200486AC7 /* LaunchScreen.storyboard */,
 			);
 			path = FarmFoster;
 			sourceTree = "<group>";
@@ -180,7 +310,7 @@
 		6ABDA2682B32A3500071E298 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				6A11A03B2B3D7D2D00F61F23 /* itemSpecificView */,
+				6A65B76D2B68FF09004F8155 /* Components */,
 				6ABDA26F2B32A4600071E298 /* Home */,
 			);
 			path = Modules;
@@ -190,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				6AA234FF2B3ACAF400E132FC /* Routes */,
+				6A4EB9942B6A072A00EABA01 /* ComponentsCoordinator.swift */,
 				6AA234FA2B3ACA4E00E132FC /* AppCoordinator.swift */,
 				6AA2350D2B3AE81900E132FC /* HomeCoordinator.swift */,
 				6AA235022B3ACC2800E132FC /* MainTabCoordinator.swift */,
@@ -213,6 +344,7 @@
 				6ABDA2702B32A5DD0071E298 /* AppImage.swift */,
 				6ABDA2762B32A9C60071E298 /* AppColor.swift */,
 				6ABDA27E2B32B38E0071E298 /* AppFont.swift */,
+				6A4EB9A02B6A0CF000EABA01 /* LocalizedString.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -227,6 +359,7 @@
 		6ABDA26F2B32A4600071E298 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				6A11A03B2B3D7D2D00F61F23 /* itemSpecificView */,
 				6A044F1D2B32F3C70008B837 /* ListView */,
 				6ABDA26D2B32A4390071E298 /* HomeScreen.swift */,
 				6A044F1B2B32E7CD0008B837 /* HomeScreenViewModel.swift */,
@@ -261,6 +394,14 @@
 			name = FarmFoster;
 			packageProductDependencies = (
 				6AA234FD2B3ACA7F00E132FC /* FlowStacks */,
+				6AB863CC2BA9847400F7F8BE /* Apollo */,
+				6AB863CE2BA9847400F7F8BE /* Apollo-Dynamic */,
+				6AB863D02BA9847400F7F8BE /* ApolloAPI */,
+				6AB863D22BA9847400F7F8BE /* ApolloSQLite */,
+				6AB863D42BA9847400F7F8BE /* ApolloTestSupport */,
+				6AB863D62BA9847400F7F8BE /* ApolloWebSocket */,
+				6AB863DE2BA990DC00F7F8BE /* FarmFosterAPI */,
+				6A9FAD532BABF72600E5A5EE /* FarmFosterAPI */,
 			);
 			productName = FarmFoster;
 			productReference = 6ABDA2572B32A3470071E298 /* FarmFoster.app */;
@@ -292,6 +433,8 @@
 			mainGroup = 6ABDA24E2B32A3470071E298;
 			packageReferences = (
 				6AA234FC2B3ACA7F00E132FC /* XCRemoteSwiftPackageReference "FlowStacks" */,
+				6AB863CB2BA9847400F7F8BE /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				6A9FAD522BABF72600E5A5EE /* XCLocalSwiftPackageReference "FarmFosterAPI" */,
 			);
 			productRefGroup = 6ABDA2582B32A3470071E298 /* Products */;
 			projectDirPath = "";
@@ -309,8 +452,11 @@
 			files = (
 				6ABDA2752B32A97F0071E298 /* Colors.xcassets in Resources */,
 				6ABDA2622B32A3490071E298 /* Preview Assets.xcassets in Resources */,
+				6A4EB99F2B6A0C4D00EABA01 /* Localizable.strings in Resources */,
 				6ABDA27D2B32B3580071E298 /* Roboto-Bold.ttf in Resources */,
 				6AAADA972B3413F200486AC7 /* LaunchScreen.storyboard in Resources */,
+				6A9FAD4F2BABED7C00E5A5EE /* Plant.graphql in Resources */,
+				6AB863DA2BA98B1400F7F8BE /* Animal.graphql in Resources */,
 				6ABDA27B2B32B2E30071E298 /* Roboto-Regular.ttf in Resources */,
 				6ABDA25F2B32A3490071E298 /* Assets.xcassets in Resources */,
 			);
@@ -327,20 +473,32 @@
 				6A044F1C2B32E7CD0008B837 /* HomeScreenViewModel.swift in Sources */,
 				6AA2350E2B3AE81900E132FC /* HomeCoordinator.swift in Sources */,
 				6ABDA27F2B32B38E0071E298 /* AppFont.swift in Sources */,
+				6A4EB9972B6A089E00EABA01 /* ComponentsRoutes.swift in Sources */,
 				6A11A03F2B3D7D9600F61F23 /* ItemDetailViewModel.swift in Sources */,
+				6AB863E42BA9A1DA00F7F8BE /* NetworkInterceptor.swift in Sources */,
+				6A65B7702B6900F8004F8155 /* MapScreen.swift in Sources */,
 				6AA235012B3ACB0E00E132FC /* AppRoutes.swift in Sources */,
 				6A11A03A2B3D79E600F61F23 /* DiseaseModel.swift in Sources */,
 				6A044F212B32F80E0008B837 /* FarmItemScreen.swift in Sources */,
 				6AA235032B3ACC2800E132FC /* MainTabCoordinator.swift in Sources */,
 				6A11A0372B3D6B7400F61F23 /* NetworkClient.swift in Sources */,
 				6ABDA2772B32A9C60071E298 /* AppColor.swift in Sources */,
+				6A4EB9952B6A072A00EABA01 /* ComponentsCoordinator.swift in Sources */,
+				6A4EB9A12B6A0CF000EABA01 /* LocalizedString.swift in Sources */,
+				6A4EB99C2B6A0AB700EABA01 /* ComponentsViewModel.swift in Sources */,
 				6ABDA25B2B32A3470071E298 /* FarmFosterApp.swift in Sources */,
 				6A11A03D2B3D7D3E00F61F23 /* itemDetailScreen.swift in Sources */,
 				6AA234FB2B3ACA4E00E132FC /* AppCoordinator.swift in Sources */,
 				6AA235092B3AE2CD00E132FC /* TabBarViewModifier.swift in Sources */,
+				6AB863E62BA9A78800F7F8BE /* DefaultInterceptor.swift in Sources */,
 				6AA235062B3AE27D00E132FC /* HideTabBar.swift in Sources */,
+				6AB863E92BA9AEE600F7F8BE /* BuildConfiguration.swift in Sources */,
 				6ABDA2712B32A5DD0071E298 /* AppImage.swift in Sources */,
+				6AA8C91B2BAA9CF0005FE0E2 /* AnimalClient.swift in Sources */,
 				6A044F1F2B32F4070008B837 /* FarmItemListScreen.swift in Sources */,
+				6A4EB99A2B6A0A5800EABA01 /* ComponentsScreen.swift in Sources */,
+				6A9FAD512BABED9F00E5A5EE /* PlantClient.swift in Sources */,
+				6A4EB9A52B6A6C3800EABA01 /* CarouselScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +717,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		6A9FAD522BABF72600E5A5EE /* XCLocalSwiftPackageReference "FarmFosterAPI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = FarmFosterAPI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		6AA234FC2B3ACA7F00E132FC /* XCRemoteSwiftPackageReference "FlowStacks" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -568,13 +733,59 @@
 				minimumVersion = 0.3.7;
 			};
 		};
+		6AB863CB2BA9847400F7F8BE /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6A9FAD532BABF72600E5A5EE /* FarmFosterAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FarmFosterAPI;
+		};
 		6AA234FD2B3ACA7F00E132FC /* FlowStacks */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6AA234FC2B3ACA7F00E132FC /* XCRemoteSwiftPackageReference "FlowStacks" */;
 			productName = FlowStacks;
+		};
+		6AB863CC2BA9847400F7F8BE /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AB863CB2BA9847400F7F8BE /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		6AB863CE2BA9847400F7F8BE /* Apollo-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AB863CB2BA9847400F7F8BE /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = "Apollo-Dynamic";
+		};
+		6AB863D02BA9847400F7F8BE /* ApolloAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AB863CB2BA9847400F7F8BE /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloAPI;
+		};
+		6AB863D22BA9847400F7F8BE /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AB863CB2BA9847400F7F8BE /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+		6AB863D42BA9847400F7F8BE /* ApolloTestSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AB863CB2BA9847400F7F8BE /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloTestSupport;
+		};
+		6AB863D62BA9847400F7F8BE /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AB863CB2BA9847400F7F8BE /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+		6AB863DE2BA990DC00F7F8BE /* FarmFosterAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FarmFosterAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

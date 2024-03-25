@@ -12,6 +12,7 @@ enum AppColor: String {
     case appGray
     case appOrange
     case navyBlue
+    case lightGray
 
     var color: Color {
         Color(self.rawValue)

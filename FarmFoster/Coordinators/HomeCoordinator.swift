@@ -12,7 +12,7 @@ public protocol ScreenRoutable {}
 
 enum HomeRoutes: Equatable {
     case home
-    case itemspecific(disease: [DiseaseModel])
+    case itemspecific(disease: [ItemDiseaseModel])
 }
 
 struct HomeCoordinator: View {
@@ -37,7 +37,7 @@ struct HomeCoordinator: View {
 
             case .home:
                 HomeScreen(viewModel: {
-                    let viewModel = HomeScreenViewModel(networkClient: client)
+                    let viewModel = HomeScreenViewModel(client: AnimalClient(client: client), plantClient: PlantClient(client: client))
                     viewModel.onRouteTrigger = handleFlowRoute()
                     return viewModel
                 }())
@@ -46,7 +46,7 @@ struct HomeCoordinator: View {
         }
     }
 
-    func showItemSpecificScreen(disease: [DiseaseModel]) {
+    func showItemSpecificScreen(disease: [ItemDiseaseModel]) {
         routes.push(.itemspecific(disease: disease))
     }
 
