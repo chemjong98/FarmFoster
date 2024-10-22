@@ -11,4 +11,9 @@ enum ComponentsRoutes {
     case componentList
     case map
     case shader
+    case mediaPicker
+    case multipleMediaPicker
+    case textFields
+    case swiftDataCards
+    case slider
 }

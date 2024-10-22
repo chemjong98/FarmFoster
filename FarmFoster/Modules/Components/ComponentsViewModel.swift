@@ -20,9 +20,14 @@ class baseViewModel: ObservableObject {
 }
 
 enum componentsList: String, CaseIterable {
+//    case none
     case map
     case shader
     case carousel
+    case mediaPicker
+    case TextFields
+    case swiftDataCards
+    case slider
 
     var key: String {
         NSLocalizedString(self.rawValue, comment: "")
@@ -32,12 +37,18 @@ enum componentsList: String, CaseIterable {
 enum componentListRoutable: ScreenRoutable {
     case mapScreen
     case shaderScreen
+    case mediaPickerScreen
+    case multipleMediaPickerScreen
+    case textFields
+    case swiftDataCards
+    case slider
 }
 
 // MARK: - ComponentsViewModel
 class ComponentsViewModel: baseViewModel {
     
     // MARK: - properties
+    @Published var selectedItem: componentsList?
     var onRouteTrigger: ((ScreenRoutable) -> Void)?
 }
 
@@ -49,5 +60,25 @@ extension ComponentsViewModel {
 
     func goToShader() {
         onRouteTrigger?(componentListRoutable.shaderScreen)
+    }
+    
+    func goToMediaPicker() {
+        onRouteTrigger?(componentListRoutable.mediaPickerScreen)
+    }
+    
+    func goToTextFields() {
+        onRouteTrigger?(componentListRoutable.textFields)
+    }
+    
+    func goTocards() {
+        onRouteTrigger?(componentListRoutable.swiftDataCards)
+    }
+    
+    func goToMediaPickerMultiple() {
+        onRouteTrigger?(componentListRoutable.multipleMediaPickerScreen)
+    }
+    
+    func goToSlider() {
+        onRouteTrigger?(componentListRoutable.slider)
     }
 }

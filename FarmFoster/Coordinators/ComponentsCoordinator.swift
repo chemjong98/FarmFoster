@@ -26,6 +26,17 @@ struct ComponentsCoordinator: View {
                 MapScreen()
             case .shader:
                 MapScreen()
+            case .mediaPicker:
+                MediaPickerScreen(viewModel: MediaPickerViewModel())
+            case .textFields:
+                TextFieldsScreen(viewModel: TextFieldsViewModel())
+                
+            case .swiftDataCards:
+                SwiftDataScreen(viewModel: SwiftDataViewModel())
+            case .multipleMediaPicker:
+                MediaPickerScreen(viewModel: MediaPickerViewModel(), singlePicker: false)
+            case .slider:
+                SliderScreen()
             }
         }
     }
@@ -37,7 +48,27 @@ struct ComponentsCoordinator: View {
     func showShader() {
         routes.push(.shader)
     }
+    
+    func showMediaPicker() {
+        routes.push(.mediaPicker)
+    }
+    
+    func showTextFields() {
+        routes.push(.textFields)
+    }
 
+    func showSwiftDataCards() {
+        routes.push(.swiftDataCards)
+    }
+    
+    func showMultipleMediaPicker() {
+        routes.push(.multipleMediaPicker)
+    }
+    
+    func showSlider() {
+        routes.push(.slider)
+    }
+    
     func handleFlowRoutes() -> (ScreenRoutable) -> Void {
         return { routes in
             switch routes {
@@ -46,7 +77,22 @@ struct ComponentsCoordinator: View {
 
             case componentListRoutable.shaderScreen:
                 showShader()
+                
+            case componentListRoutable.mediaPickerScreen:
+                showMediaPicker()
+                
+            case componentListRoutable.textFields:
+                showTextFields()
+                
+            case componentListRoutable.swiftDataCards:
+                showSwiftDataCards()
 
+            case componentListRoutable.multipleMediaPickerScreen:
+                showMultipleMediaPicker()
+                
+            case componentListRoutable.slider:
+                showSlider()
+                
             default:
                 break
             }

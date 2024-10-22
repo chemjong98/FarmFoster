@@ -38,7 +38,7 @@ class HomeScreenViewModel: ObservableObject {
         getPlants()
     }
     
-    func  mals() {
+    func  getAnimals() {
         Task {
             do {
                 self.animals = try await client.getAnimalList()

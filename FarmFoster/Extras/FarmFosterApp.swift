@@ -7,12 +7,18 @@
 
 import SwiftUI
 import FlowStacks
+import SwiftData
 
 @main
 struct FarmFosterApp: App {
     var body: some Scene {
         WindowGroup {
-            AppCoordinator()
+            if #available(iOS 17.0, *) {
+                AppCoordinator()
+                    .modelContainer(for: SwiftDataCardModel.self)
+            } else {
+                AppCoordinator()
+            }
         }
     }
 }
